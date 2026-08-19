@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>__USER_NAME__ - Subscriber Portal</title>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/itsyebekhe/nahan@main/tailwindcss.js"></script>
     <script>
         tailwind.config = {
@@ -12,7 +12,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        fa: ['Vazirmatn', 'sans-serif'],
+                        zh: ['Noto Sans SC', 'sans-serif'],
                         en: ['Inter', 'sans-serif'],
                     },
                     colors: {
@@ -98,13 +98,13 @@
         }
 
         body {
-            font-family: 'Inter', 'Vazirmatn', sans-serif;
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
             background: var(--bg-primary) !important;
             color: var(--text-primary);
             transition: background 0.3s, color 0.3s;
             -webkit-font-smoothing: antialiased;
         }
-        [lang="fa"] body { font-family: 'Vazirmatn', sans-serif; }
+        [lang="zh"] body { font-family: 'Noto Sans SC', sans-serif; }
         
         .bento-card {
             background: var(--bg-card) !important;
@@ -501,65 +501,35 @@
                 availableFormats: 'Available Subscription Formats',
                 formatsDesc: 'Use these links to explicitly request specific configuration formats.'
             },
-            fa: {
-                totalUsage: '总用量',
-                dailyUsage: '日用量',
-                expDate: '到期日期',
-                calendarLocal: '本地时间',
-                unlimitedPlan: '无限套餐',
-                noDailyLimit: '无日限额',
-                integrationTitle: '连接链接',
-                integrationDesc: '添加您首选的配置链接。',
-                universalLink: '自动链接',
-                universalDesc: '此链接会自动识别您的客户端并发送最佳格式。',
-                oneClickImport: '一键导入',
-                copy: '复制',
-                copyRaw: '复制原始链接',
-                qr: '二维码',
-                parsedContent: '获取原始文本',
-                close: '关闭',
-                qrTitle: '扫描二维码',
-                copied: '已复制!',
-                decodedCopied: '链接已复制!',
-                decodedError: '获取错误',
-                used: '% 已用',
-                active: '在线',
-                paused: '已暂停',
-                expired: '已过期',
-                limitExceeded: '已超限',
-                dailyLimitExceeded: '已超日限额',
-                availableFormats: '可用订阅格式',
-                formatsDesc: '使用这些链接直接请求特定配置格式。'
-            },
             zh: {
                 totalUsage: '总用量',
                 dailyUsage: '日用量',
                 expDate: '到期日期',
                 calendarLocal: '本地时间',
                 unlimitedPlan: '无限套餐',
-                noDailyLimit: '无日限额',
+                noDailyLimit: '无日限制',
                 integrationTitle: '连接链接',
-                integrationDesc: '添加您首选的配置链接。',
+                integrationDesc: '添加您想要的配置链接。',
                 universalLink: '自动链接',
-                universalDesc: '此链接会自动识别您的客户端并发送最佳格式。',
+                universalDesc: '此链接会识别您的客户端并发送最佳格式。',
                 oneClickImport: '一键导入',
                 copy: '复制',
                 copyRaw: '复制原始链接',
                 qr: '二维码',
-                parsedContent: '获取原始文本',
+                parsedContent: '获取原始内容',
                 close: '关闭',
                 qrTitle: '扫描二维码',
-                copied: '已复制!',
-                decodedCopied: '链接已复制!',
-                decodedError: '获取错误',
+                copied: '已复制！',
+                decodedCopied: '链接已复制！',
+                decodedError: '获取失败',
                 used: '% 已用',
-                active: '在线',
+                active: '正常',
                 paused: '已暂停',
                 expired: '已过期',
                 limitExceeded: '已超限',
-                dailyLimitExceeded: '已超日限额',
+                dailyLimitExceeded: '已超日限',
                 availableFormats: '可用订阅格式',
-                formatsDesc: '使用这些链接直接请求特定配置格式。'
+                formatsDesc: '使用这些链接直接请求特定的配置格式。'
             }
         };
 
@@ -591,7 +561,7 @@
                 document.documentElement.setAttribute('dir', 'ltr');
                 document.documentElement.setAttribute('lang', 'zh');
                 document.getElementById('lang-icon').textContent = '🇨🇳';
-                document.getElementById('lang-label').textContent = '中';
+                document.getElementById('lang-label').textContent = 'ZH';
             } else {
                 document.documentElement.setAttribute('dir', 'ltr');
                 document.documentElement.setAttribute('lang', 'en');
