@@ -10,7 +10,7 @@
       <meta name="msapplication-tap-highlight" content="no">
       <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236366f1'/><text x='50' y='62' font-size='40' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>N</text></svg>">
       <title>Nahan Gateway</title>
-      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto Sans SC:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
       <script src="https://cdn.jsdelivr.net/gh/itsyebekhe/nahan@main/tailwindcss.js"></script>
             <script>
           tailwind.config = {
@@ -981,15 +981,15 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                               <div data-accordion-content="" class="transition-all duration-300" style="max-height:0;overflow:hidden;visibility:hidden">
                                   <div class="space-y-4 px-5 pb-5 pt-1">
                                       <div class="p-3 rounded-xl bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-900/30 text-xs text-indigo-700 dark:text-indigo-300 leading-relaxed font-sans">
-                                          <p data-i18n="adv_routing_desc"><strong>这是什么功能？</strong><br>某些网站或地址你想直接访问而不通过代理。在此添加它们，使其流量走正常路径而非代理路径。</p>
+                                          <p data-i18n="adv_routing_desc"><strong>这个功能是做什么的？</strong><br>某些网站或地址你希望不通过代理打开 (直连). 在此输入地址，使其流量走普通路由而不通过代理.</p>
                                       </div>
                                       <div class="space-y-1">
                                           <label class="block text-sm font-bold text-slate-600 dark:text-slate-300" data-i18n="adv_routing_label">自定义直连路由</label>
                                           <textarea id="cfg-custom-routing" rows="4" placeholder="example.com&#10;1.2.3.4&#10;geoip:ir&#10;geosite:ir" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-1 outline-none font-mono text-sm resize-none"></textarea>
-                                          <p class="text-xs text-slate-400 mt-1" data-i18n="adv_routing_hint">每行一个域名、IP、geoip（如 geoip:cn）或 geosite（如 geosite:cn）。</p>
+                                          <p class="text-xs text-slate-400 mt-1" data-i18n="adv_routing_hint">每行一个地址、IP、geoip（如 geoip:cn）或 geosite（如 geosite:cn）。</p>
                                            <div class="mt-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/30 text-xs text-amber-700 dark:text-amber-300 leading-relaxed font-sans flex gap-2">
                                                <span>⚠️</span>
-                                               <span data-i18n="adv_routing_warning">错误的条目或格式问题可能导致连接中断。保存前请仔细检查。</span>
+                                               <span data-i18n="adv_routing_warning">如果输入错误地址或格式不正确，连接将断开。保存前请仔细检查。</span>
                                            </div>
                                       </div>
                                   </div>
@@ -1009,9 +1009,9 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                   <div class="space-y-4 px-5 pb-5 pt-1">
                                       <!-- Explanation box -->
                                       <div class="p-4 rounded-xl bg-indigo-50 dark:bg-indigo-950/20 border border-indigo-200 dark:border-indigo-900/30 text-xs text-indigo-700 dark:text-indigo-300 leading-relaxed font-sans space-y-2">
-                                          <p data-i18n="adv_upstream_desc1"><strong>这是什么功能？</strong><br>将一个免费VLESS服务器（如从RaceVPN或SSHMax等网站获取）引入面板，使所有流量通过该服务器。即你的出口IP变为该服务器的IP。</p>
-                                          <p data-i18n="adv_upstream_desc2"><strong>为什么需要？</strong><br>有时你需要特定国家（如德国或美国）的IP但不想购买服务器。此功能让你免费使用该国家的IP。</p>
-                                          <p data-i18n="adv_upstream_desc3"><strong>如何使用？</strong><br>1. 从以下网站获取VLESS链接<br>2. 将链接粘贴到这里<br>3. 保存<br>4. 使用订阅链接（Sing-Box或Clash格式）</p>
+                                          <p data-i18n="adv_upstream_desc1"><strong>这个功能是做什么的？</strong><br>将一个免费的VLESS服务器（例如来自RaceVPN或SSHMax等网站）引入面板，使所有流量通过该服务器。即你的出口IP将变为该服务器的IP。</p>
+                                          <p data-i18n="adv_upstream_desc2"><strong>为什么需要？</strong><br>有时你需要特定国家（如德国或美国）的IP，但不想购买服务器。通过此功能，你可以免费使用该国家的IP。</p>
+                                          <p data-i18n="adv_upstream_desc3"><strong>如何使用？</strong><br>1. 从以下网站获取VLESS链接<br>2. 将链接粘贴到此处<br>3. 保存<br>4. 使用订阅链接（Sing-Box或Clash格式）</p>
                                       </div>
                                       <div class="space-y-1">
                                           <label class="block text-sm font-bold text-slate-600 dark:text-slate-300" data-i18n="adv_upstream_label">VLESS服务器链接</label>
@@ -1020,7 +1020,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       </div>
                                       <!-- Free VLESS providers -->
                                       <div class="space-y-2">
-                                          <p class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider" data-i18n="adv_upstream_providers">免费VLESS提供商：</p>
+                                          <p class="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider" data-i18n="adv_upstream_providers">免费链接获取网站：</p>
                                           <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                                               <a href="https://sshmax.net" target="_blank" class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-darkborder text-xs text-slate-600 dark:text-slate-300 hover:border-primary transition-colors">
                                                   <span>🌐</span><span>SSHMax</span>
@@ -1044,7 +1044,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       </div>
                                       <div class="mt-2 p-3 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/30 text-xs text-amber-700 dark:text-amber-300 leading-relaxed font-sans flex gap-2">
                                           <span>⚠️</span>
-                                          <span data-i18n="adv_upstream_warning">免费配置通常几天后就会过期。如果连接断开，请获取新链接替换。仅支持Sing-Box和Clash格式。</span>
+                                          <span data-i18n="adv_upstream_warning">免费配置通常只能维持几天。如果连接断开，请获取新链接并替换。仅支持Sing-Box和Clash格式。</span>
                                       </div>
                                   </div>
                               </div>
@@ -1354,12 +1354,12 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                        </h4>
                                        <div class="space-y-3">
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_u_name">名称（必填）</span> <span class="text-red-400">*</span><</label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_u_name">用户名</span> <span class="text-red-400">*</span><</label>
                                                <input type="text" id="add-user-name" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm" data-i18n-placeholder="placeholder_user_name" placeholder="e.g. Ali" data-i18n-placeholder="placeholder_user_name">
                                                <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_user_name">在用户列表中显示的名称</p>
                                            </div>
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_custom_config_name">自定义配置名称/前缀</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_custom_config_name">自定义配置名称</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <input type="text" id="add-user-custom-name" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm" data-i18n-placeholder="placeholder_config_name" placeholder="Leave empty to use user name" data-i18n-placeholder="placeholder_config_name">
                                            </div>
                                        </div>
@@ -1382,13 +1382,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                </div>
                                            </div>
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_expiration_days">到期日期（天）</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_expiration_days">有效期（天）</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <input type="number" id="add-user-days" placeholder="Unlimited" data-i18n-placeholder="unlimited" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm">
                                            </div>
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_conn_limit">连接限制</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_conn_limit">并发连接限制</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <input type="number" id="add-user-conn-limit" placeholder="Unlimited" data-i18n-placeholder="unlimited" min="1" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm" data-i18n-placeholder="unlimited">
-                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_conn_limit">每个用户的最大同时连接数。留空为无限。</p>
+                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_conn_limit">每个IP的最大并发连接数 IP. 留空 = 名称约.</p>
                                            </div>
                                        </div>
                                    </div>
@@ -1411,7 +1411,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                    <input type="text" id="add-user-helper-name" placeholder="Name" data-i18n-placeholder="placeholder_name" class="w-1/3 px-3 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-1 outline-none text-xs">
                                                    <button type="button" onclick="addHelperIpToTextarea('add-user-helper-ip', 'add-user-helper-name', 'add-user-custom-clean')" class="px-3 py-2 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition-colors">+</button>
                                                </div>
-                                               <textarea id="add-user-custom-clean" rows="2" placeholder="1.2.3.4#Germany, 5.6.7.8" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
+                                               <textarea id="add-user-custom-clean" rows="2" placeholder="1.2.3.4#德国, 5.6.7.8" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_proxy_ips">代理IP</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1419,10 +1419,10 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                <textarea id="add-user-custom-proxy" rows="2" placeholder="proxy1.com:443" class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
                                            </div>
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_assigned_nodes">分配的节点</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_assigned_nodes">专用节点</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <div id="add-user-nodes-wrap" class="flex flex-wrap gap-2 mt-1 text-slate-500"></div>
                                                <textarea id="add-user-custom-nodes" rows="2" placeholder="node1.example.com" class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
-                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_assigned_nodes">自定义节点（逗号/换行，空=所有节点）</p>
+                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_assigned_nodes">留空 = 使用所有节点</p>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_user_panel_url">主面板URL</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1440,13 +1440,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
                                                <span class="w-5 h-5 flex items-center justify-center rounded bg-amber-500/10 text-amber-500 text-[10px]">4</span>
                                                <span data-i18n="section_advanced">高级</span>
-                                               <span class="text-[10px] font-normal text-slate-400" data-i18n="section_advanced_subtag">（协议与端口）</span>
+                                               <span class="text-[10px] font-normal text-slate-400" data-i18n="section_advanced_subtag">(协议 和 端口)</span>
                                            </h4>
                                            <svg id="add-advanced-arrow" class="w-4 h-4 text-slate-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                        </button>
                                        <div id="add-advanced-content" class="hidden px-4 pb-4 space-y-3">
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_protocol_mode">协议模式</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_protocol_mode">协议</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <div id="add-user-mode-wrap" class="flex gap-3 mt-2">
                                                    <label class="flex items-center gap-2 cursor-pointer group">
                                                        <div class="relative">
@@ -1465,7 +1465,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300 group-hover:text-violet-500 transition-colors">Trojan</span>
                                                    </label>
                                                </div>
-                                               <p class="text-[10px] text-slate-400 mt-1">留空 = 使用默认设置</p>
+                                               <p class="text-[10px] text-slate-400 mt-1">留空 = 使用 设置 默认</p>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1">端口 <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1482,7 +1482,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                    <button onclick="closeAddUserPage()" class="px-5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-bold text-sm" data-i18n="btn_cancel">取消</button>
                                    <button onclick="commitAddUser()" class="native-press px-6 py-2.5 rounded-xl bg-primary text-white font-bold text-sm shadow-sm flex items-center gap-2">
                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                       <span data-i18n="save_btn_user">保存用户</span>
+                                       <span data-i18n="save_btn_user">保存 用户</span>
                                    </button>
                                </div>
                            </div>
@@ -1495,7 +1495,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                    <button onclick="closeEditUserPage()" class="native-press p-2 -ms-2 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                                        <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                                    </button>
-                                   <h3 class="text-lg font-bold text-slate-800 dark:text-white" data-i18n="edit_sub">编辑用户</h3>
+                                   <h3 class="text-lg font-bold text-slate-800 dark:text-white" data-i18n="edit_sub">编辑 用户</h3>
                                    <input type="hidden" id="edit-user-id">
                                </div>
                                <div class="overflow-y-auto flex-1 min-h-0 p-5 space-y-4">
@@ -1511,7 +1511,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                               <input type="text" id="edit-user-name" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm">
                                           </div>
                                           <div>
-                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_custom_config_name">自定义配置名称/前缀</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_custom_config_name">自定义配置名称</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                               <input type="text" id="edit-user-custom-name" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm">
                                           </div>
                                       </div>
@@ -1534,13 +1534,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                               </div>
                                           </div>
                                           <div>
-                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_expiration_days">到期日期（天）</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_expiration_days">有效期（天）</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                               <input type="number" id="edit-user-days" placeholder="Unlimited" data-i18n-placeholder="unlimited" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm">
                                           </div>
                                           <div>
-                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_conn_limit">连接限制</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                              <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_conn_limit">并发连接限制</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                               <input type="number" id="edit-user-conn-limit" placeholder="Unlimited" data-i18n-placeholder="unlimited" min="1" class="w-full px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm" data-i18n-placeholder="unlimited">
-                                              <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_conn_limit">每个用户的最大同时连接数。留空为无限。</p>
+                                              <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_conn_limit">每个IP的最大并发连接数 IP. 留空 = 名称约.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1563,7 +1563,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                    <input type="text" id="edit-user-helper-name" placeholder="Name" data-i18n-placeholder="placeholder_name" class="w-1/3 px-3 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary focus:ring-1 outline-none text-xs">
                                                    <button type="button" onclick="addHelperIpToTextarea('edit-user-helper-ip', 'edit-user-helper-name', 'edit-user-custom-clean')" class="px-3 py-2 bg-primary text-white rounded-xl font-bold hover:bg-primary-hover transition-colors">+</button>
                                                </div>
-                                               <textarea id="edit-user-custom-clean" rows="2" placeholder="1.2.3.4#Germany, 5.6.7.8" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
+                                               <textarea id="edit-user-custom-clean" rows="2" placeholder="1.2.3.4#德国, 5.6.7.8" class="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_proxy_ips">代理IP</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1571,10 +1571,10 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                <textarea id="edit-user-custom-proxy" rows="2" placeholder="proxy1.com:443" class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
                                            </div>
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_assigned_nodes">分配的节点</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_assigned_nodes">专用节点</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <div id="edit-user-nodes-wrap" class="flex flex-wrap gap-2 mt-1 text-slate-500"></div>
                                                <textarea id="edit-user-custom-nodes" rows="2" placeholder="node1.example.com" class="w-full mt-1 px-4 py-3 rounded-xl border border-slate-200 dark:border-darkborder bg-slate-50 dark:bg-slate-800 focus:border-primary outline-none text-sm"></textarea>
-                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_assigned_nodes">自定义节点（逗号/换行，空=所有节点）</p>
+                                               <p class="text-[10px] text-slate-400 mt-1" data-i18n="desc_assigned_nodes">留空 = 使用所有节点</p>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_user_panel_url">主面板URL</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1592,13 +1592,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-2">
                                                <span class="w-5 h-5 flex items-center justify-center rounded bg-amber-500/10 text-amber-500 text-[10px]">4</span>
                                                <span data-i18n="section_advanced">高级</span>
-                                               <span class="text-[10px] font-normal text-slate-400" data-i18n="section_advanced_subtag">（协议与端口）</span>
+                                               <span class="text-[10px] font-normal text-slate-400" data-i18n="section_advanced_subtag">(协议 和 端口)</span>
                                            </h4>
                                            <svg id="edit-advanced-arrow" class="w-4 h-4 text-slate-400 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                        </button>
                                        <div id="edit-advanced-content" class="hidden px-4 pb-4 space-y-3">
                                            <div>
-                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_protocol_mode">协议模式</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
+                                               <label class="block text-xs font-bold text-slate-500 mb-1" data-i18n="lbl_protocol_mode">协议</span> <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
                                                <div id="edit-user-mode-wrap" class="flex gap-3 mt-2">
                                                    <label class="flex items-center gap-2 cursor-pointer group">
                                                        <div class="relative">
@@ -1617,7 +1617,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                                        <span class="text-sm font-medium text-slate-600 dark:text-slate-300 group-hover:text-violet-500 transition-colors">Trojan</span>
                                                    </label>
                                                </div>
-                                               <p class="text-[10px] text-slate-400 mt-1">留空 = 使用默认设置</p>
+                                               <p class="text-[10px] text-slate-400 mt-1">留空 = 使用 设置 默认</p>
                                            </div>
                                            <div>
                                                <label class="block text-xs font-bold text-slate-500 mb-1">端口 <span class="text-[10px] font-normal text-slate-400">(可选)</span></label>
@@ -1665,7 +1665,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                   </div>
                                   <!-- Search bar -->
                                   <div class="relative w-full md:w-72">
-                                      <input type="text" id="faq-search" oninput="filterFAQs()" placeholder="Search FAQ / 搜索常见问题..." class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-darkborder rounded-xl text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
+                                      <input type="text" id="faq-search" oninput="filterFAQs()" placeholder="Search FAQ / 在帮助中搜索..." class="w-full px-4 py-2.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-darkborder rounded-xl text-slate-700 dark:text-slate-200 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary">
                                   </div>
                               </div>
 
@@ -1675,7 +1675,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">What is Nahan Gateway? / Nahan Gateway是什么？</span>
+                                              <span class="text-sm md:text-base">What is Nahan Gateway? / 隐藏网关 是什么？</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1686,7 +1686,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80">Nahan Gateway是一个先进的单文件订阅和代理管理系统，专为Cloudflare Workers开发。该系统作为网关运行，安全地分发配置（Clash、Sing-box、Trojan、VMess），并将您的原始服务器隐藏在Cloudflare全球网络之后。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80">隐藏网关是一个订阅和代理管理系统，是专为Cloudflare Workers开发的单文件。这个系统作为网关运行以使配置（Clash, Sing-box, Trojan, VMess）安全分发并将您的服务器隐藏在Cloudflare全局网络之后。</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1696,7 +1696,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">How does "Auto-Update" work? / "自动更新"功能如何工作？</span>
+                                              <span class="text-sm md:text-base">How does "Auto-Update" work? / 「自动更新」如何工作？</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1707,7 +1707,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80">当在系统设置中启用自动更新时，一个Cron Trigger会在后台定期检查GitHub仓库的更新。如果发现新版本，Worker会自动拉取最新代码，应用所选格式（标准或混淆），直接部署自身，并触发所有已连接面板/节点的更新。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80">当自动更新在 设置 活跃 启用时，定时任务会在后台定期检查GitHub仓库版本. 如果有新版本，Worker会自动获取新代码，选择的格式 (普通 或混淆的) 应用后，直接部署并 节点/同步已连接的面板.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1717,7 +1717,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">What is the difference between Normal and Obfuscated formats? / 普通格式和混淆格式有什么区别？</span>
+                                              <span class="text-sm md:text-base">What is the difference between Normal and Obfuscated formats? / 格式差异 普通 和混淆是什么？</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1728,7 +1728,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80"><strong>标准：</strong>部署原始JS代码。易于阅读，但容易被流量分析/防火墙扫描。<br><strong>混淆：</strong>使用XOR字节偏移来混淆源代码。Cloudflare Edge在运行时使用高速动态解码器编译，防止第三方扫描。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80"><strong>普通:</strong> 部署原始JavaScript代码。易读但暴露于防火墙流量分析。<br><strong>混淆:</strong> 使用XOR字节移位进行代码混淆。Cloudflare在运行时快速解密它。</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1738,7 +1738,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">What are "Clients" & "Subscription Fake Entries"? / "用户"和"订阅虚假条目"是什么？</span>
+                                              <span class="text-sm md:text-base">What are "Clients" & "Subscription Fake Entries"? / 用户 和 订阅条目输入 是什么？</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1749,7 +1749,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80"><strong>用户</strong>标签页允许您创建具有特定限制（流量配额、到期日期、IP连接数限制）的个人订阅令牌。<strong>订阅虚假条目</strong>自定义客户端应用中订阅配置文件UI显示的内容，如剩余流量或天数，使用<code>{usage}</code>和<code>{expiry}</code>等占位符模式。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80">标签 <strong>用户</strong> 允许您为每个订阅者设置流量限制、到期日期和并发连接数。<strong>订阅条目输入</strong> 确定哪些消息使用动态代码如 <code>{usage}</code> 和 <code>{expiry}</code> 在用户软件中显示。</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1759,7 +1759,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">What are "Other Nodes" / linked panels? / "其他节点"（已连接的面板）是什么？</span>
+                                              <span class="text-sm md:text-base">What are "Other Nodes" / linked panels? / 「其他节点」（已连接的面板）是什么？</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1770,7 +1770,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80">"其他节点"代表外部已连接的面板。通过生成面板API密钥并注册子节点URL，主面板在触发更新时自动同步、更新并部署相同的Worker代码到所有已连接的节点。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80">«其他节点» 已连接的从面板. 通过创建面板访问密钥 (API Key) 和注册 节点地址 从面板，主面板每次更新时自动将新版本发送给所有 节点已连接的面板并发送部署.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -1780,7 +1780,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                       <button onclick="toggleFAQ(this)" class="w-full flex items-center justify-between text-start focus:outline-none font-bold text-slate-800 dark:text-white hover:text-primary transition-colors">
                                           <span class="flex items-center gap-2">
                                               <span class="text-primary text-sm">❓</span>
-                                              <span class="text-sm md:text-base">Explain critical fields like Clean IPs and Proxy IPs / 解释干净IP和代理IP字段</span>
+                                              <span class="text-sm md:text-base">Explain critical fields like Clean IPs and Proxy IPs / 字段说明 干净IP 和代理IP</span>
                                           </span>
                                           <svg class="w-5 h-5 transform transition-transform duration-200 shrink-0 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                       </button>
@@ -1791,7 +1791,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                           </div>
                                           <div class="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/30">
                                               <div class="flex items-center gap-1.5 mb-2"><span class="px-1.5 py-0.5 rounded text-[9px] font-bold bg-emerald-500 text-white">ZH</span><span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-semibold">中文</span></div>
-                                              <p class="text-slate-700 dark:text-emerald-200/80"><strong>干净IP：</strong>未被封禁的Cloudflare IP。网关为每个添加的干净IP生成独立的配置集，为用户提供冗余。<br><strong>代理IP：</strong>幕后IPv4/IPv6中转节点，用于从被封锁的目标网站获取数据。</p>
+                                              <p class="text-slate-700 dark:text-emerald-200/80"><strong>干净IP:</strong> 未过滤的Cloudflare IP. 这个 系统 为该部分中注册的每个IP生成单独的输出以提供稳定连接.<br><strong>代理IP:</strong> 后台传输IP用于与被过滤的目标网站通信.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -2122,111 +2122,148 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                     html_desc_strategy: "<details><summary class='cursor-pointer text-primary'>View supported placeholders...</summary><div class='mt-2'>Supported placeholders: <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{FLAG}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{COUNTRY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{CITY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{ISP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PROTOCOL}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{USER}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PORT}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PREFIX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP_NAME}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{HOST}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{DATE}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{INDEX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{WORKER}</code>.<br><span class='text-[10px] text-slate-400 dark:text-slate-500 leading-snug'>• <b>{FLAG}</b>: Country flag emoji (e.g. 🇺🇸).<br>• <b>{COUNTRY}</b>: Country name.<br>• <b>{CITY}</b>: City name.<br>• <b>{ISP}</b>: ISP / ASN org.<br>• <b>{PROTOCOL}</b>: Core mode (VLESS / Trojan).<br>• <b>{USER}</b>: Subscriber name.<br>• <b>{PORT}</b>: Active port.<br>• <b>{PREFIX}</b>: Custom prefix.<br>• <b>{IP}</b>: Clean IP address.<br>• <b>{IP_NAME}</b>: Clean IP name.<br>• <b>{HOST}</b>: Hostname.<br>• <b>{DATE}</b>: Current date.<br>• <b>{INDEX}</b>: Config index.<br>• <b>{WORKER}</b>: Worker name.</span><br>Pre-defined strategies: <code>default</code>, <code>type-user-port</code>, <code>user-port</code>, <code>host-port-user</code>, <code>prefix-user-port</code>, <code>ip</code>.</div></details>",
                },
               zh: {
-                  title: "Nahan 网关", pass_ph: "主密钥", login_btn: "登录", err_pass: "访问被拒绝", missing_db: "⚠️ 未找到数据库！设置将不会被保存。", system_online: "系统在线",
-                  logout: "退出", tab_overview: "仪表板", tab_info: "节点", tab_status: "网络", tab_settings: "设置", tab_adv: "高级", tab_logs: "活动日志", tab_help: "帮助与常见问题",
-                  qr_title: "直连链接", badge_multi: "双核多路复用", copy: "复制", copied: "已复制到剪贴板！", sync_link: "同步链接（云同步）", active_id: "硬件ID",
-                  stat_ip: "源IP", stat_dc: "边缘节点", stat_loc: "数据区域",
-                  lbl_proto: "主显示协议", lbl_port: "数据端口", lbl_id: "设备UUID（空=自动）",
-                  lbl_path: "API路由（隐藏路径）", lbl_pass: "主密钥", lbl_fp: "TLS签名", lbl_dns: "解析器IP",
-                  lbl_clean_ips: "干净IP（多生成器）", ph_clean_ips: "1.1.1.1, 2.2.2.2", desc_clean_ips: "用逗号或换行分隔IP。同步链接将为所有IP组合生成配置。",
-                  lbl_fake: "伪装网站（隐身模式）", lbl_relay: "备用中继IP", lbl_tfo: "TCP快速打开", lbl_ech: "安全问候（ECH）",
-                  lbl_fake_configs: "订阅信息条目", desc_fake_configs: "自定义订阅配置文件中显示的信息条目。使用 {usage} 和 {expiry} 表示动态值。", btn_add_entry: "添加条目",                   lbl_tg_token: "Telegram机器人Token", lbl_tg_chat: "Telegram Chat ID", lbl_tg_admin: "授权的Telegram管理员ID", desc_tg_admin: "仅此Telegram用户ID可通过机器人管理面板。留空则使用Chat ID。", desc_tg_bot: "设置这些值以通过Telegram接收登录提醒。",
-                  lbl_cf_acc: "Cloudflare账户ID", lbl_cf_token: "Cloudflare API Token", desc_cf_api: "可选：监控Worker每日用量限制（10万/天）。需要账户分析读取权限。",
-                  lbl_silent: "静默UI提醒", lbl_pause: "紧急停止开关（暂停系统）",
-                   lbl_sub_ua: "自定义订阅User-Agent", desc_sub_ua: "包含此文本的浏览器请求将绕过伪装直接获取配置文件数据。",
-                   lbl_api_keys: "面板API密钥", desc_api_keys: "生成API密钥以安全连接远程面板。远程面板使用这些密钥而非共享主密钥。",
-                   btn_generate_key: "生成密钥", api_key_created: "API密钥已创建！请立即复制 — 不会再次显示。",
-                   api_keys_empty: "尚未生成API密钥。", enter_key_name: "输入此API密钥的名称：",
+                  title: "隐藏网关", pass_ph: "主密钥", login_btn: "登录系统", err_pass: "访问被拒绝", missing_db: "⚠️ 未找到数据库空间！设置将不会被保存。", system_online: "系统在线",
+                  logout: "退出", tab_overview: "概览", tab_info: "节点", tab_status: "网络", tab_settings: "设置", tab_adv: "高级", tab_logs: "活动日志", tab_help: "帮助与常见问题",
+                  qr_title: "直连链接", badge_multi: "高级双传输组合", copy: "复制", copied: "已复制！", sync_link: "订阅链接（云同步）", active_id: "硬件ID",
+                  stat_ip: "源IP", stat_dc: "边缘节点", stat_loc: "数据中心区域",
+                  lbl_proto: "直连协议", lbl_port: "数据端口", lbl_id: "唯一ID（空=自动）",
+                  lbl_path: "隐藏API路径", lbl_pass: "主密钥", lbl_fp: "安全指纹", lbl_dns: "解析器IP",
+                  lbl_clean_ips: "干净IP（多生成器）", ph_clean_ips: "1.1.1.1, 2.2.2.2", desc_clean_ips: "用逗号或换行分隔IP。订阅将为所有组合生成链接。",
+                  lbl_fake: "伪装站点（隐身模式）", lbl_relay: "备用IP（辅助）", lbl_tfo: "快速连接", lbl_ech: "安全问候",
+                  lbl_fake_configs: "订阅条目输入", desc_fake_configs: "自定义订阅配置文件中条目的显示文本。使用 {usage} 和 {expiry} 表示动态值。", btn_add_entry: "添加条目", lbl_tg_token: "Telegram机器人Token", lbl_tg_chat: "Telegram数字ID", lbl_tg_admin: "Telegram管理员ID", desc_tg_admin: "只有此Telegram用户ID可以通过机器人管理面板。留空则使用聊天ID。", desc_tg_bot: "设置这些值后，面板登录详情将发送到Telegram。",
+                  lbl_cf_acc: "云账户ID", lbl_cf_token: "用户访问Token", desc_cf_api: "可选：用于在Telegram消息中显示Worker的每日请求消耗，使用10万次免费请求额度。",
+                  lbl_silent: "静默警告和消息", lbl_pause: "紧急停止密钥",
+                   lbl_sub_ua: "自定义订阅UserAgent", desc_sub_ua: "包含此文本的浏览器请求将绕过伪装并直接访问订阅。",
+                   lbl_api_keys: "面板API密钥", desc_api_keys: "创建API密钥以安全连接远程面板。远程面板使用这些密钥代替共享主密钥。",
+                   btn_generate_key: "生成密钥", api_key_created: "API密钥已创建！请复制——不会再次显示。",
+                   api_keys_empty: "尚未创建API密钥。", enter_key_name: "输入此API密钥的名称：",
                    confirm_revoke: "撤销此API密钥？远程面板将失去访问权限。", revoke: "撤销",
                    created: "创建时间", last_used: "最后使用", never: "从未",
                    tab_users: "用户",
-                  user_mgt_title: "用户管理", user_mgt_desc: "管理多个用户，设置流量限制和到期日期。", btn_add_user: "+ 添加新用户",
-                  tbl_name: "名称", tbl_uuid: "UUID", tbl_traffic: "流量（已用/限制）", tbl_exp: "到期", tbl_action: "操作", no_users: "未找到用户。请在上方创建一个。",
+                  user_mgt_title: "用户管理", user_mgt_desc: "管理多个用户、设置流量限制和到期日期。", btn_add_user: "+ 添加新用户",
+                  tbl_name: "名称", tbl_uuid: "唯一ID", tbl_traffic: "流量（已用/限制）", tbl_exp: "到期", tbl_action: "操作", no_users: "未找到用户。请使用上方按钮创建。",
                   modal_add_title: "添加新用户", lbl_u_name: "名称（必填）", lbl_u_gb: "流量限制（GB）- 可选", lbl_u_days: "有效期（天）- 可选", btn_cancel: "取消", btn_confirm: "添加用户",
-                  save_btn: "保存配置", msg_saving: "保存中...", msg_saved: "已保存！", msg_err: "连接错误",
+                  save_btn: "保存设置", msg_saving: "保存中...", msg_saved: "成功！", msg_err: "通信错误",
                   backup_restore_title: "备份与恢复", ping_test_title: "网络延迟诊断", ping_test_desc: "测量活跃干净IP的响应延迟。",
                   lbl_github_repo: "更新源仓库", update_avail: "有新版本可用！", update_btn: "获取最新代码",
-                     cf_help_title: "新手获取这些信息的步骤指南",
-                     lbl_update_format: "更新格式与混淆选项：",
-                     desc_update_format: "部署标准源代码，或使用动态XOR字节偏移加密以避免网络拦截。",
-                     format_normal: "标准（_worker.js）",
-                     format_obfuscated: "混淆（UTF-8 + XOR）",
-                     btn_redeploy_force: "强制重新部署/切换格式",
-                     adv_network_dns: "网络与DNS", adv_proxy_relay: "代理与中继", adv_subscription: "订阅",
-                     adv_upstream_title: "上游VLESS", adv_upstream_badge: "Sing-Box / Clash",
-                     adv_upstream_desc1: "<strong>这是什么功能？</strong><br>让你使用一个免费的VLESS服务器（如来自RaceVPN或SSHMax），使所有流量通过该服务器。你的出口IP将变为该服务器的IP。",
-                     adv_upstream_desc2: "<strong>为什么需要？</strong><br>有时你需要特定国家（如德国或美国）的IP，但不想购买服务器。此功能让你免费使用该国家的IP。",
-                     adv_upstream_desc3: "<strong>如何使用？</strong><br>1. 从以下网站获取VLESS链接<br>2. 粘贴到此处<br>3. 点击保存<br>4. 使用订阅链接（Sing-Box或Clash格式）",
-                     adv_upstream_label: "VLESS服务器链接", adv_upstream_hint: "从以下网站复制VLESS链接并粘贴到此处：",
-                     adv_upstream_providers: "免费VLESS提供商：", adv_upstream_warning: "免费配置通常几天后就会过期。如果连接断开，请获取新链接替换。仅支持Sing-Box和Clash格式。",
-                     adv_routing_title: "自定义路由", adv_routing_desc: "<strong>这是什么功能？</strong><br>某些网站或地址你想直接访问而不通过代理。在此添加它们，使其流量走正常路径而非代理路径。", adv_routing_label: "自定义直连路由", adv_routing_hint: "每行一个域名、IP、geoip（如 geoip:cn）或 geosite（如 geosite:cn）。", adv_routing_warning: "错误的条目或格式问题可能导致连接中断。保存前请仔细检查。",
-                     adv_protocol: "协议", adv_telegram: "Telegram机器人", adv_cloudflare: "Cloudflare",
-                     stat_datetime: "日期时间",
-                     desc_custom_panel_url: "可选。指定自定义域名/URL用于订阅/同步链接。如为空，将使用默认Worker地址。",
-                     lbl_custom_config_name: "自定义配置名称/前缀",
-                     lbl_traffic_limit_gb: "流量限制（GB）",
-                     lbl_daily_limit_gb: "每日限制（GB）",
-                     lbl_expiration_days: "到期日期（天）",
-                     loading_logs: "正在加载活动日志...", show_qr: "显示二维码",
-                     no_matching_users: "未找到匹配的用户", no_active_conn: "暂无活跃连接数据。",
-                     qr_subtitle: "使用V-Core或T-Core客户端扫描",
-                     no_activity_logs: "未找到活动日志。", no_recent_activity: "暂无最近活动。",
-                     no_ips_advanced: "高级选项卡中未添加IP", no_nodes_advanced: "高级选项卡中无从属节点",
-                     no_changelog: "此版本无更新日志。", no_changes: "无变更记录。",
-                     update_requires_cf: "设置CF账户ID、API Token和Worker名称以启用面板内部署。",
-                     section_basic_info: "基本信息", section_limits: "限制", section_network: "网络", section_advanced: "高级",
-                     section_advanced_tag: "（高级）", section_advanced_subtag: "（协议与端口）", unlimited: "无限", placeholder_user_name: "例如：张三", placeholder_config_name: "留空则使用用户名", desc_user_name: "在用户列表中显示的名称", placeholder_name: "名称",
-                     placeholder_user_name: "例如：张三", placeholder_config_name: "留空则使用用户名", desc_user_name: "在用户列表中显示的名称", placeholder_name: "名称",
-                     lbl_nat64: "NAT64前缀", desc_nat64: "可选。将IPv4代理IP转换为NAT64 IPv6地址。支持多个前缀。",
-                     lbl_direct_configs: "包含直连配置", desc_direct_configs: "生成不含代理IP的配置以及中继配置",
-                     lbl_sync_api_key: "同步API密钥（推送到从节点）", desc_sync_api_key: "来自从面板的API密钥。主面板使用此密钥推送配置。此密钥必须存在于每个从面板的API密钥中。",
-                     lbl_auto_update: "自动更新", desc_auto_update: "检测到新版本时自动部署",
-                     lbl_auto_update_format: "更新格式", format_normal_label: "标准", format_obfuscated_label: "混淆",
-                     desc_format_normal: "标准 _worker.js", desc_format_obfuscated: "XOR字节偏移",
-                     lbl_prefix: "自定义名称前缀", html_desc_prefix_note: "此前缀会在命名策略中使用 <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PREFIX}</code> 标签的地方被替换。", lbl_clean_ips: "干净IP", lbl_proxy_ips: "代理IP", lbl_assigned_nodes: "分配的节点",
-                     lbl_protocol_mode: "协议模式", lbl_max_configs: "最大配置数",
-                     desc_assigned_nodes: "自定义节点（逗号/换行，空=所有节点）",
-                     desc_nat64_user: "可选。将IPv4代理IP转换为NAT64 IPv6地址。",
-                     desc_proxy_ips: "自定义代理IP（逗号/换行）",
-                     desc_clean_ips_modal: "自定义干净IP（逗号/换行）",
-                     btn_generate_uuid: "生成UUID",
-                     lbl_conn_limit: "连接限制", desc_conn_limit: "每个用户的最大同时连接数。留空为无限。",
-                     lbl_user_panel_url: "主面板URL", desc_user_panel_url: "自定义节点的主面板域名。如为空，使用默认面板URL。",
-                     html_desc_strategy: "<details><summary class='cursor-pointer text-primary'>查看支持的占位符...</summary><div class='mt-2'>支持的占位符: <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{FLAG}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{COUNTRY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{CITY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{ISP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PROTOCOL}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{USER}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PORT}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PREFIX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP_NAME}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{HOST}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{DATE}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{INDEX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{WORKER}</code>.<br><span class='text-[10px] text-slate-400 dark:text-slate-500 leading-snug'>• <b>{FLAG}</b>: 国旗表情.<br>• <b>{COUNTRY}</b>: 国家名称.<br>• <b>{CITY}</b>: 城市名称.<br>• <b>{ISP}</b>: ISP/ASN组织.<br>• <b>{PROTOCOL}</b>: 核心模式 (VLESS / Trojan).<br>• <b>{USER}</b>: 用户名称.<br>• <b>{PORT}</b>: 活动端口.<br>• <b>{PREFIX}</b>: 自定义前缀.<br>• <b>{IP}</b>: 干净IP地址.<br>• <b>{IP_NAME}</b>: 干净IP名称.<br>• <b>{HOST}</b>: 主机名.<br>• <b>{DATE}</b>: 当前日期.<br>• <b>{INDEX}</b>: 配置序号.<br>• <b>{WORKER}</b>: Worker名称.</span><br>预定义策略: <code>default</code>, <code>type-user-port</code>, <code>user-port</code>, <code>host-port-user</code>, <code>prefix-user-port</code>, <code>ip</code>.</div></details>",
-               }
+                    cf_help_title: "初学者获取这些信息的教程",
+                    lbl_update_format: "更新格式和追踪移除：",
+                    desc_update_format: "部署普通源代码，或使用XOR可变密钥字节混淆以避免过滤。",
+                    format_normal: "普通（_worker.js）",
+                    format_obfuscated: "混淆（UTF-8 + XOR）",
+                    btn_redeploy_force: "重新部署 / 更改面板格式",
+                    adv_network_dns: "网络和DNS", adv_proxy_relay: "代理和中继", adv_subscription: "订阅",
+                    adv_upstream_title: "上游VLESS", adv_upstream_badge: "Sing-Box / Clash",
+                    adv_upstream_desc1: "<strong>这个功能是做什么的？</strong><br>将一个免费的VLESS服务器（例如来自RaceVPN或SSHMax等网站）引入面板，使所有流量通过该服务器。即你的出口IP将变为该服务器的IP。",
+                    adv_upstream_desc2: "<strong>为什么需要它？</strong><br>有时你需要特定国家（如德国或美国）的IP，但不想购买服务器。通过此功能，你可以免费使用该国家的IP。",
+                    adv_upstream_desc3: "<strong>如何使用？</strong><br>1. 从以下网站获取VLESS链接<br>2. 将链接粘贴到此处<br>3. 保存<br>4. 使用订阅链接（Sing-Box或Clash格式）",
+                    adv_upstream_label: "VLESS服务器链接", adv_upstream_hint: "从以下网站复制VLESS链接并粘贴到此处：",
+                    adv_upstream_providers: "免费链接获取网站：", adv_upstream_warning: "免费配置通常只能维持几天。如果连接断开，请获取新链接并替换。仅支持Sing-Box和Clash格式。",
+                    adv_routing_title: "自定义路由", adv_routing_desc: "<strong>这个功能是做什么的？</strong><br>某些网站或地址你希望不通过代理打开（直连）。在此输入地址，使其流量走普通路由。", adv_routing_label: "自定义直连路由", adv_routing_hint: "每行一个地址、IP、geoip（如 geoip:cn）或 geosite（如 geosite:cn）。", adv_routing_warning: "如果输入错误地址或格式不正确，连接将断开。保存前请仔细检查。",
+                    adv_protocol: "协议", adv_telegram: "Telegram机器人", adv_cloudflare: "Cloudflare",
+                    stat_datetime: "日期和时间",
+                    desc_custom_panel_url: "可选。输入自定义域名/地址用于订阅/同步链接。如果留空，将使用Worker的默认地址。",
+                    lbl_custom_config_name: "自定义配置名称/前缀",
+                    lbl_traffic_limit_gb: "流量限制（GB）",
+                    lbl_daily_limit_gb: "每日限制（GB）",
+                    lbl_expiration_days: "到期日期（天）",
+                    loading_logs: "正在加载日志...", show_qr: "显示二维码",
+                    no_matching_users: "没有匹配的用户", no_active_conn: "尚未记录活跃连接数据。",
+                    qr_subtitle: "使用V-Core或T-Core客户端扫描",
+                    no_activity_logs: "未找到活动日志。", no_recent_activity: "没有最近的活动记录。",
+                    no_ips_advanced: "高级部分未添加IP", no_nodes_advanced: "高级部分未添加子节点",
+                    no_changelog: "此版本没有更新日志。", no_changes: "没有记录的更改。",
+                    section_basic_info: "基本信息", section_limits: "限制", section_network: "网络", section_advanced: "高级",
+                    section_advanced_tag: "（高级）", section_advanced_subtag: "（协议和端口）", unlimited: "无限制", placeholder_user_name: "例如：小明", placeholder_config_name: "留空 = 使用用户名", desc_user_name: "在用户列表中显示的名称", placeholder_name: "名称",
+                    placeholder_user_name: "例如：小明", placeholder_config_name: "留空 = 使用用户名", desc_user_name: "在用户列表中显示的名称", placeholder_name: "名称",
+                    lbl_nat64: "NAT64前缀", desc_nat64: "可选。将IPv4代理IP转换为NAT64 IPv6地址。支持多个前缀。",
+                    lbl_direct_configs: "包含直连配置", desc_direct_configs: "在代理配置旁边生成不带代理IP的配置",
+                    lbl_sync_api_key: "同步API密钥（发送到从面板）", desc_sync_api_key: "从面板的API密钥。主面板使用此密钥发送配置。此密钥必须存在于从面板的API密钥列表中。",
+                    lbl_auto_update: "自动更新", desc_auto_update: "检测到新版本时自动部署",
+                    lbl_auto_update_format: "更新格式", format_normal_label: "普通", format_obfuscated_label: "混淆",
+                    desc_format_normal: "标准 _worker.js", desc_format_obfuscated: "XOR字节交换",
+                    lbl_clean_ips: "干净IP", lbl_proxy_ips: "代理IP", lbl_assigned_nodes: "专用节点",
+                    lbl_protocol_mode: "协议", lbl_max_configs: "最大配置数",
+                    desc_assigned_nodes: "自定义节点（逗号/换行分隔，留空 = 所有节点）",
+                    desc_nat64_user: "可选。将IPv4代理IP转换为NAT64 IPv6地址。",
+                    desc_proxy_ips: "自定义代理IP（逗号/换行分隔）",
+                    desc_clean_ips_modal: "自定义干净IP（逗号/换行分隔）",
+                    btn_generate_uuid: "生成UUID",
+                    lbl_conn_limit: "并发连接限制", desc_conn_limit: "每个用户的最大并发连接数。留空表示无限制。",
+                    lbl_user_panel_url: "主面板URL（自定义节点）", desc_user_panel_url: "自定义节点使用的主面板域名。如果留空，将使用默认面板URL。",
+                  metrics_live: "实时连接和流量状态", no_metrics: "尚未记录事务和活跃连接数据。", run_diagnostics: "⚡ 运行网络诊断",
+                  target_node: "网络节点目标", response: "响应延迟时间", status: "节点状态", local_port: "本地端口",
+                  lbl_doh: "专用数字地址解析器", lbl_strategy: "配置命名策略", lbl_prefix: "配置名称前缀", html_desc_prefix_note: "此前缀将替换命名策略中 <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PREFIX}</code> 变量所在的位置。",
+                    
+                  slave_title: "其他并行节点", slave_desc: "输入其他Worker的域名地址（每行一个）。主节点将自动与其同步设置和订阅者！",
+                  force_sync: "强制同步节点", limit_total: "总请求限制（GB）（留空表示无限制）", limit_daily: "每日请求限制（GB）（留空表示无限制）",
+                  limit_days: "有效期（天）- 留空表示无限制", edit_sub: "编辑订阅者", lbl_name_ph: "名称或唯一ID",
+                  btn_save_changes: "保存更改", save_btn_user: "注册新用户", status_active: "活跃", status_paused: "已暂停", status_expired: "已过期",
+                  export_btn: "📥 导出配置文件（备份）", import_btn: "📤 导入配置文件（备份）",
+                  stat_total_subscribers: "总订阅者", stat_active_paused: "活跃 / 已暂停", stat_cumulative_traffic: "累计总流量", stat_auto_disabled: "自动禁用",
+                  sub_directory_title: "订阅者目录", sub_directory_desc: "搜索、修改限制、更改流量限制或清除计费会话。",
+                  user_search_placeholder: "🔍 按名称或ID搜索...",
+                  filter_all: "所有用户", filter_active: "活跃", filter_paused: "已暂停", filter_auto_disabled: "自动禁用",
+                  disabled_panel_title: "最近禁用的用户", disabled_panel_desc: "因配额用完或到期而被禁用的用户",
+                  lbl_u_Protocol:"协议类型（留空按全局设置）",
+                  lbl_u_ports:"端口类型",
+                  lbl_u_max_config:"最大配置数",
+                  login_password:"登录密码",
+                  lbl_u_ipproxy:"用户代理IP（可选 - 覆盖全局干净IP，用逗号/换行分隔）",
+                  v_pop_title: "维护通知", v_pop_whatsnew: "新功能", v_pop_headline: "新功能和改进",
+                  v_pop_btn: "知道了！",
+                  changelog_title: "更新日志和新版本说明：",
+                   changelog_added: "新增", changelog_fixed: "修复", changelog_improved: "改进", changelog_changed: "变更", changelog_note: "重要提示",
+                   ov_total_users: "总用户", ov_active_users: "活跃", ov_paused_users: "已暂停", ov_auto_disabled: "自动禁用", ov_expired_users: "已过期",
+                   ov_total_traffic: "总流量", ov_today_traffic: "今日流量", ov_requests: "请求", ov_active_conns: "活跃连接",
+                   ov_system: "系统", ov_recent_activity: "最近活动", ov_view_all: "查看全部 ←", ov_loading: "加载中...",
+                   ov_quick_actions: "快速操作", ov_add_user: "添加用户", ov_backup_config: "备份", ov_refresh: "刷新统计", ov_manage_users: "管理用户",
+                   ov_gb_unit: "GB",
+                     lbl_allow_sync:"允许同步",
+                     other_nodes_title: "其他节点", other_nodes_desc: "外部节点（URL + API密钥）用于跨面板管理。",
+                     add_node_title: "添加外部节点", add_node_desc: "输入外部面板的URL和API密钥。",
+                     add_node_url: "节点地址", add_node_apikey: "API密钥", add_node_confirm: "添加节点", add_node_invalid: "请输入URL和API密钥。",
+                     node_added: "节点添加成功！", node_removed: "节点已删除。",
+                      deploy_btn: "立即安装", update_deploying: "正在安装更新...",
+                      update_success: "更新成功！正在重新加载...", update_error: "更新出错",
+                      lbl_cf_worker: "云Worker脚本名称", desc_cf_worker: "自动更新必需。云Worker仪表板中的脚本名称。",
+                      view_github: "在GitHub上查看",
+                     update_requires_cf: "要自动安装，请设置账户ID、API Token和Worker名称。",
+                     html_desc_strategy: "<details><summary class='cursor-pointer text-primary'>查看支持的变量...</summary><div class='mt-2'>支持的变量: <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{FLAG}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{COUNTRY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{CITY}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{ISP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PROTOCOL}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{USER}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PORT}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{PREFIX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{IP_NAME}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{HOST}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{DATE}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{INDEX}</code>, <code class='bg-slate-100 dark:bg-slate-800/80 px-1 py-0.5 rounded text-rose-500 font-mono'>{WORKER}</code>.<br><span class='text-[10px] text-slate-400 dark:text-slate-500 leading-snug'>• <b>{FLAG}</b>: 国旗emoji.<br>• <b>{COUNTRY}</b>: 国家名称.<br>• <b>{CITY}</b>: 城市名称.<br>• <b>{ISP}</b>: ISP/ASN组织.<br>• <b>{PROTOCOL}</b>: 核心模式 (VLESS / Trojan).<br>• <b>{USER}</b>: 订阅者名称.<br>• <b>{PORT}</b>: 活跃端口.<br>• <b>{PREFIX}</b>: 自定义前缀.<br>• <b>{IP}</b>: 干净IP地址.<br>• <b>{IP_NAME}</b>: 干净IP名称.<br>• <b>{HOST}</b>: 主机名.<br>• <b>{DATE}</b>: 当前日期.<br>• <b>{INDEX}</b>: 配置索引.<br>• <b>{WORKER}</b>: Worker名称.</span><br>预定义策略: <code>default</code>, <code>type-user-port</code>, <code>user-port</code>, <code>host-port-user</code>, <code>prefix-user-port</code>, <code>ip</code>.</div></details>",
+                }
           };
 
           const CHANGELOG_DATA = {
 
               "3.0.0": {
-                  headline: { en: "Upstream VLESS, Redesigned User Management & Better UX", zh: "上游VLESS、重新设计用户管理与更好的用户体验" },
+                  headline: { en: "Upstream VLESS, Redesigned User Management & Better UX", zh: "Upstream VLESS，重新设计的用户管理和更好的用户体验" },
                   added: [
-                      { en: "Upstream VLESS / Proxy Chaining — you can now chain your panel with another VLESS server to bypass restrictions", zh: "上游VLESS/代理链功能 — 现在可以将你的面板与另一个VLESS服务器链接以绕过限制" },
-                      { en: "Upstream VLESS section with simple explanations and links to free config providers", zh: "上游VLESS部分，包含简单说明和免费配置获取网站链接" },
-                      { en: "v2rayN JSON subscription format (?flag=vjson) added to subscription page", zh: "订阅页面新增v2rayN JSON订阅格式 (?flag=vjson)" },
-                      { en: "Custom Routing section now has bilingual descriptions (Farsi + English)", zh: "自定义路由部分现在有双语说明（中文+英文）" },
+                      { en: "Upstream VLESS / Proxy Chaining — you can now chain your panel with another VLESS server to bypass restrictions", zh: "Upstream VLESS / 代理链功能 — 现在可以将面板与另一个VLESS服务器链接以绕过限制" },
+                      { en: "Upstream VLESS section with simple explanations and links to free config providers", zh: "Upstream VLESS部分，包含简单说明和免费配置获取网站链接" },
+                      { en: "v2rayN JSON subscription format (?flag=vjson) added to subscription page", zh: "v2rayN JSON订阅格式 (?flag=vjson) 已添加到订阅页面" },
+                      { en: "Custom Routing section now has bilingual descriptions (Farsi + English)", zh: "自定义路由部分现在有双语说明（中文 + 英文）" },
                       { en: "Custom confirm modal instead of browser's default alert/confirm dialogs", zh: "自定义确认弹窗替代浏览器默认的alert/confirm对话框" },
-                      { en: "Draft save for Add User form — if you close the page, your data won't be lost", zh: "添加用户表单草稿自动保存 — 关闭页面数据不会丢失" },
+                      { en: "Draft save for Add User form — if you close the page, your data won't be lost", zh: "添加用户表单自动保存草稿 — 关闭页面数据不会丢失" },
                       { en: "Auto-copy subscription link after creating a new user", zh: "创建新用户后自动复制订阅链接" },
-                      { en: "Toast notifications for actions like save, copy, and delete", zh: "Toast通知用于保存、复制和删除等操作" }
+                      { en: "Toast notifications for actions like save, copy, and delete", zh: "保存、复制和删除等操作的Toast通知" }
                   ],
                   fixed: [
                       { en: "Language switching now updates all text instantly without page refresh", zh: "语言切换现在即时更新所有文本，无需刷新页面" },
-                      { en: "FAQ section text contrast improved in dark mode", zh: "深色模式下FAQ部分文字对比度改善" },
+                      { en: "FAQ section text contrast improved in dark mode", zh: "深色模式下FAQ部分的文本对比度得到改善" },
                       { en: "Fixed RTL layout issues on subscription page — boxes and buttons stay in correct position", zh: "修复订阅页面RTL布局问题 — 框和按钮保持在正确位置" },
-                      { en: "Fixed FAQ English answer boxes now display LTR correctly", zh: "修复FAQ英文回答框现在正确从左到右显示" },
-                      { en: "Fixed sidebar hover color — now white in dark mode", zh: "修复侧边栏悬停颜色 — 深色模式下现在为白色" },
+                      { en: "Fixed FAQ English answer boxes now display LTR correctly", zh: "修复FAQ英文答案框现在正确地从左到右显示" },
+                      { en: "Fixed sidebar hover color — now white in dark mode", zh: "修复侧边栏悬停颜色 — 深色模式下现在变为白色" },
                       { en: "Fixed mobile Nodes tab icon alignment with other sidebar items", zh: "修复移动端节点标签图标与其他侧边栏项的对齐" },
-                      { en: "Settings tab now uses full width instead of half-empty layout", zh: "设置标签现在使用全宽而非半空布局" }
+                      { en: "Settings tab now uses full width instead of half-empty layout", zh: "设置标签现在使用全宽而不是半空布局" }
                   ],
                   improved: [
-                      { en: "Redesigned Add/Edit User forms — numbered sections with collapsible advanced settings", zh: "重新设计添加/编辑用户表单 — 带编号的分区和可折叠高级设置" },
-                      { en: "Modern toggle switches for protocol selection (VLESS/Trojan) instead of plain checkboxes", zh: "现代切换开关用于协议选择（VLESS/Trojan）替代普通复选框" },
-                      { en: "Redesigned user cards with status badges (Active/Paused/Expired), UUID display, and action buttons with labels", zh: "重新设计用户卡片，带状态徽章（活跃/暂停/过期）、UUID显示和带标签的操作按钮" },
-                      { en: "Improved user card action buttons with hover effects and Farsi/English labels", zh: "改进用户卡片操作按钮，添加悬停效果和中文/英文标签" },
-                      { en: "All form labels and placeholders are now fully bilingual (Farsi + English)", zh: "所有表单标签和占位符现在完全双语（中文+英文）" },
+                      { en: "Redesigned Add/Edit User forms — numbered sections with collapsible advanced settings", zh: "重新设计添加/编辑用户表单 — 带编号的部分和可折叠的高级设置" },
+                      { en: "Modern toggle switches for protocol selection (VLESS/Trojan) instead of plain checkboxes", zh: "现代切换开关用于协议选择（VLESS/Trojan），替代普通复选框" },
+                      { en: "Redesigned user cards with status badges (Active/Paused/Expired), UUID display, and action buttons with labels", zh: "重新设计用户卡片，带状态徽章（活跃/已暂停/已过期）、UUID显示和带标签的操作按钮" },
+                      { en: "Improved user card action buttons with hover effects and Farsi/English labels", zh: "改进用户卡片操作按钮，带悬停效果和中文/英文标签" },
+                      { en: "All form labels and placeholders are now fully bilingual (Farsi + English)", zh: "所有表单标签和占位符现在完全双语（中文 + 英文）" },
                       { en: "Form field validation with visual feedback (red border on error)", zh: "表单字段验证带视觉反馈（错误时红色边框）" },
-                      { en: "Smooth CSS animations for accordion sections and UI transitions", zh: "平滑CSS动画用于手风琴分区和UI过渡效果" }
+                      { en: "Smooth CSS animations for accordion sections and UI transitions", zh: "流畅的CSS动画用于手风琴部分和UI过渡" }
                   ],
                   changed: [
                       { en: "Version upgraded from 2.9.4 to 3.0.0", zh: "版本从2.9.4升级到3.0.0" }
@@ -2235,95 +2272,95 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
               },
 
               "2.9.4": {
-                  headline: { en: "Live Active Connections, Auto-Update Cron & v2rayN JSON", zh: "实时活跃连接、自动更新定时任务和v2rayN JSON输出" },
+                  headline: { en: "Live Active Connections, Auto-Update Cron & v2rayN JSON", zh: "实时连接、自动更新定时任务和v2rayN JSON输出" },
                   added: [
-                      { en: "Added maxConfigs option per user to limit the number of generated configurations", zh: "新增maxConfigs选项限制每个用户生成的配置数量" },
-                      { en: "Live active connections stream count in the dashboard for each user/profile", zh: "仪表板中每个用户/配置文件的实时活跃流连接数" },
-                      { en: "Added scheduled cron job capability for automatic Cloudflare worker updates", zh: "新增定时任务(cron)功能用于自动更新Cloudflare Worker" },
+                      { en: "Added maxConfigs option per user to limit the number of generated configurations", zh: "添加maxConfigs功能限制每个用户生成的配置数量" },
+                      { en: "Live active connections stream count in the dashboard for each user/profile", zh: "仪表板中每个用户/配置文件的实时流连接数" },
+                      { en: "Added scheduled cron job capability for automatic Cloudflare worker updates", zh: "添加定时任务（cron）功能用于自动更新Cloudflare Worker" },
                       { en: "Added ?format=vjson parameter support for raw V2Ray/v2rayN JSON configuration outputs", zh: "支持?format=vjson参数用于原始V2Ray/v2rayN JSON配置输出" },
                       { en: "Dashboard HTML & Subscription Info HTML are now dynamically fetched reducing worker size", zh: "仪表板HTML和订阅信息HTML现在动态获取，大幅减少Worker体积" }
                   ],
                   fixed: [
-                      { en: "Fixed activeConnections tracking limit logic and decrements upon WebSocket close", zh: "修复activeConnections限制逻辑和WebSocket关闭时的递减问题" },
-                      { en: "Security: Removed url authentication key fallback to prevent potential API key logging", zh: "安全：移除URL参数认证密钥回退以防止潜在的API密钥日志记录" }
+                      { en: "Fixed activeConnections tracking limit logic and decrements upon WebSocket close", zh: "修复activeConnections限制逻辑和WebSocket关闭时的递减" },
+                      { en: "Security: Removed url authentication key fallback to prevent potential API key logging", zh: "安全：移除URL参数中的认证密钥回退以防止潜在的API密钥日志记录" }
                   ],
                   improved: [
                       { en: "Added auto-refreshing dashboard stats using setInterval on dashboard intervals", zh: "添加仪表板统计自动刷新，使用仪表板内部定时调度" },
-                      { en: "Added memory management limit that clears configRegistry if it exceeds 10,000 entries", zh: "新增内存管理限制，configRegistry超过10000条目时自动清理" }
+                      { en: "Added memory management limit that clears configRegistry if it exceeds 10,000 entries", zh: "添加内存管理限制，configRegistry超过10000条目时清除" }
                   ],
                   notes: []
               },
               "2.9.0": {
-                  headline: { en: "Protocol Fix & Per-Config Node Routing", zh: "协议修复和每个配置的节点路由" },
+                  headline: { en: "Protocol Fix & Per-Config Node Routing", zh: "协议修复和每配置节点路由" },
                   added: [
-                      { en: "Per-config node routing for beta protocol via WebSocket path payload — beta nodes now route through their designated gateway IP just like alpha", zh: "通过WebSocket路径负载实现每个beta协议配置的节点路由 — beta节点现在像alpha一样通过指定的网关地址路由" },
-                      { en: "Server-side node index extraction with triple fallback: query parameter → numeric path segment → base64 JSON payload", zh: "服务端节点索引提取，三重回退链：查询参数 → 数值路径段 → base64 JSON负载" },
-                      { en: "Device connection limit per user (connLimit) — cap simultaneous connections per subscriber", zh: "每个用户的设备连接限制(connLimit) — 限制每个订阅者的同时连接数" },
+                      { en: "Per-config node routing for beta protocol via WebSocket path payload — beta nodes now route through their designated gateway IP just like alpha", zh: "通过WebSocket路径负载的beta协议每配置节点路由 — beta节点现在像alpha一样通过指定的网关地址路由" },
+                      { en: "Server-side node index extraction with triple fallback: query parameter → numeric path segment → base64 JSON payload", zh: "服务端节点索引提取，三重回退：查询参数 → 数字路径段 → base64 JSON负载" },
+                      { en: "Device connection limit per user (connLimit) — cap simultaneous connections per subscriber", zh: "每用户设备连接限制（connLimit）— 限制每个订阅者的并发连接数" },
                       { en: "Panel API key system for secure node-to-panel authentication", zh: "面板API密钥系统用于安全的节点到面板认证" },
-                      { en: "Mobile-friendly add/edit user modals with improved responsive layout", zh: "移动端友好的添加/编辑用户弹窗，改进响应式布局" }
+                      { en: "Mobile-friendly add/edit user modals with improved responsive layout", zh: "移动友好的添加/编辑用户弹窗，改进的响应式布局" }
                   ],
                   fixed: [
                       { en: "Fixed beta protocol header offset parsing — beta connections were silently dropping payload data after the port field", zh: "修复beta协议头偏移解析错误 — beta连接在端口字段后静默丢弃负载数据" },
-                      { en: "Fixed beta protocol authentication — password was set to generated internal ID instead of raw user identifier, causing permanent auth failure", zh: "修复beta协议认证 — 密码设置为生成的内部ID而非原始用户标识符，导致永久认证失败" },
-                      { en: "Added SHA224 hash registration in configRegistry so beta lookup works when isolate is warm", zh: "在configRegistry中添加SHA224哈希注册，使beta查找在warm isolate中工作" },
-                      { en: "Removed Maintenance Hosts and Sync API Key fields from Advanced tab network section as requested", zh: "按要求从高级选项卡网络部分移除维护主机和同步API密钥字段" }
+                      { en: "Fixed beta protocol authentication — password was set to generated internal ID instead of raw user identifier, causing permanent auth failure", zh: "修复beta协议认证 — 密码使用原始用户标识符而非生成的内部ID" },
+                      { en: "Added SHA224 hash registration in configRegistry so beta lookup works when isolate is warm", zh: "添加SHA224哈希注册到configRegistry，使beta查找在热isolate中工作" },
+                      { en: "Removed Maintenance Hosts and Sync API Key fields from Advanced tab network section as requested", zh: "按要求从高级标签网络部分移除维护主机和同步API密钥字段" }
                   ],
                   improved: [
-                      { en: "Beta node routing now uses the same base64 JSON WebSocket path payload format as alpha for maximum client compatibility", zh: "Beta节点路由现在使用与alpha相同的base64 JSON WebSocket路径负载格式，以实现最大客户端兼容性" },
+                      { en: "Beta node routing now uses the same base64 JSON WebSocket path payload format as alpha for maximum client compatibility", zh: "beta节点路由现在使用与alpha相同的base64 JSON WebSocket路径负载格式以获得最大客户端兼容性" },
                       { en: "Node resolution uses getEffectivePips with NAT64 awareness for both alpha and beta protocols", zh: "节点解析使用getEffectivePips，对alpha和beta协议都有NAT64感知" },
-                      { en: "Added reqPath variable to buildYamlProfile for consistent path generation", zh: "添加reqPath变量到buildYamlProfile以实现一致的路径生成" }
+                      { en: "Added reqPath variable to buildYamlProfile for consistent path generation", zh: "添加reqPath变量到buildYamlProfile用于一致的路径生成" }
                   ],
                   notes: []
               },
               "2.6.0": {
-                  headline: { en: "Bilingual Subscription Page & NAT64 Support", zh: "多语言订阅页面和NAT64支持" },
+                  headline: { en: "Bilingual Subscription Page & NAT64 Support", zh: "双语订阅页面和NAT64支持" },
                   added: [
-                      { en: "Full Persian and English language support on the subscription info page with RTL layout", zh: "订阅信息页面完整支持中文和英文，带RTL布局" },
+                      { en: "Full Persian and English language support on the subscription info page with RTL layout", zh: "订阅信息页面完整的中文和英文语言支持" },
                       { en: "Dark and light mode toggle on the subscription page with saved preference", zh: "订阅页面深色/浅色模式切换，保存用户偏好" },
-                      { en: "NAT64 support for automatic IPv4 to IPv6 address conversion", zh: "NAT64支持，自动将IPv4地址转换为IPv6" },
-                      { en: "Per-user custom hostnames for multi-region deployments", zh: "每个用户的自定义主机名，用于多区域部署" },
+                      { en: "NAT64 support for automatic IPv4 to IPv6 address conversion", zh: "NAT64支持，自动IPv4到IPv6地址转换" },
+                      { en: "Per-user custom hostnames for multi-region deployments", zh: "每用户自定义主机名用于多区域部署" },
                       { en: "Direct connection configs that work without gateway IPs", zh: "无需网关IP即可工作的直连配置" },
-                      { en: "Auto update from GitHub directly inside the dashboard", zh: "直接从仪表板内从GitHub自动更新" },
+                      { en: "Auto update from GitHub directly inside the dashboard", zh: "从GitHub直接在仪表板内自动更新" },
                       { en: "Customizable fake subscription entries with usage and expiry display", zh: "自定义虚假订阅条目，显示用量和到期时间" },
                       { en: "Full gateway management via Telegram inline buttons", zh: "通过Telegram内联按钮完整管理网关" }
                   ],
                   fixed: [
-                      { en: "Fixed garbled Persian text in the user interface", zh: "修复用户界面中的乱码中文文本" },
-                      { en: "Fixed subscription page not loading properly", zh: "修复订阅页面无法正常加载的问题" }
+                      { en: "Fixed garbled Persian text in the user interface", zh: "修复用户界面中乱码的中文文本" },
+                      { en: "Fixed subscription page not loading properly", zh: "修复订阅页面加载问题" }
                   ],
                   improved: [
-                      { en: "Significantly faster dashboard scrolling and page loading", zh: "仪表板滚动和页面加载速度显著提升" },
-                      { en: "Rewritten config generators for better compatibility", zh: "重写配置生成器以提高兼容性" },
-                      { en: "Faster and more accurate country flag detection", zh: "国家旗帜检测速度和准确性提升" },
+                      { en: "Significantly faster dashboard scrolling and page loading", zh: "仪表板滚动和页面加载速度显著改善" },
+                      { en: "Rewritten config generators for better compatibility", zh: "重写配置生成器以获得更好的兼容性" },
+                      { en: "Faster and more accurate country flag detection", zh: "更快更准确的国家旗帜检测" },
                       { en: "New config naming tags: country, city, ISP, date, and worker name", zh: "新配置命名标签：国家、城市、ISP、日期和Worker名称" }
                   ],
                   notes: []
               },
               "2.5.8": {
-                  headline: { en: "Advanced Naming Tags & GeoIP Tag Engine", zh: "高级命名标签与GeoIP标签引擎" },
+                  headline: { en: "Advanced Naming Tags & GeoIP Tag Engine", zh: "高级命名标签引擎和GeoIP标签引擎" },
                   added: [
-                      { en: "Added 7 new config naming placeholders: {COUNTRY}, {CITY}, {ISP}, {HOST}, {DATE}, {INDEX}, {WORKER}", zh: "新增7个配置命名占位符：{COUNTRY}、{CITY}、{ISP}、{HOST}、{DATE}、{INDEX}、{WORKER}" },
-                      { en: "Replaced single-purpose flag API with batch ip-api.com GeoIP enrichment for country, city, and ISP data", zh: "用ip-api.com批量GeoIP丰富替换单一旗帜API，获取国家、城市和ISP数据" },
-                      { en: "Added tag validation engine that detects and reports unknown/invalid tags in naming strategies", zh: "新增标签验证引擎，检测并报告命名策略中未知/无效的标签" }
+                      { en: "Added 7 new config naming placeholders: {COUNTRY}, {CITY}, {ISP}, {HOST}, {DATE}, {INDEX}, {WORKER}", zh: "添加7个新配置命名占位符：{COUNTRY}、{CITY}、{ISP}、{HOST}、{DATE}、{INDEX}、{WORKER}" },
+                      { en: "Replaced single-purpose flag API with batch ip-api.com GeoIP enrichment for country, city, and ISP data", zh: "用ip-api.com批量GeoIP增强替代单一用途的旗帜API，获取国家、城市和ISP数据" },
+                      { en: "Added tag validation engine that detects and reports unknown/invalid tags in naming strategies", zh: "添加标签验证引擎，检测并报告命名策略中未知/无效的标签" }
                   ],
                   fixed: [
                       { en: "GeoIP cache now stores full geo metadata (country, city, ISP) instead of only flag emoji", zh: "GeoIP缓存现在存储完整的地理元数据（国家、城市、ISP）而非仅旗帜emoji" }
                   ],
                   improved: [
-                      { en: "Config name generation now receives config index for sequential naming patterns via {INDEX}", zh: "配置名称生成现在通过{INDEX}接收配置序号用于顺序命名模式" },
-                      { en: "Updated dashboard documentation with full list of all 13 supported naming tags in English and Persian", zh: "更新仪表板文档，列出所有13个支持的命名标签（中文和英文）" }
+                      { en: "Config name generation now receives config index for sequential naming patterns via {INDEX}", zh: "配置名称生成现在通过{INDEX}接收配置索引用于顺序命名模式" },
+                      { en: "Updated dashboard documentation with full list of all 13 supported naming tags in English and Persian", zh: "更新仪表板文档，包含所有13个支持的命名标签的完整列表（中文和英文）" }
                   ],
                   notes: []
               },
               "2.5.7": {
                   headline: { en: "Dynamic Multi-IP Failover & Keyless Country Flagging", zh: "动态多IP故障转移和无密钥国家旗帜映射" },
                   added: [
-                      { en: "Support entering custom clean IPs, gateway IPs, and custom config names for each subscriber dynamically in Add/Edit user modals, with automatic extraction and seamless database merging", zh: "支持在添加/编辑用户弹窗中动态输入自定义干净IP、网关IP和配置名称，自动提取并无缝合并到数据库" },
-                      { en: "Integrated free, open-source and keyless api.country.is for country flag mapping of IP addresses", zh: "集成免费开源无密钥的api.country.is用于IP地址国家旗帜映射" }
+                      { en: "Support entering custom clean IPs, gateway IPs, and custom config names for each subscriber dynamically in Add/Edit user modals, with automatic extraction and seamless database merging", zh: "支持在添加/编辑用户弹窗中为每个订阅者动态输入自定义干净IP、网关IP和自定义配置名称，自动提取和无缝数据库合并" },
+                      { en: "Integrated free, open-source and keyless api.country.is for country flag mapping of IP addresses", zh: "集成免费、开源、无密钥的api.country.is用于IP地址的国家旗帜映射" }
                   ],
                   fixed: [
                       { en: "Resolved Cloudflare API compatibility flag error ('No such compatibility flag: unsafe-eval' and startup 'Uncaught EvalError') by updating to 'allow_eval_during_startup'", zh: "修复Cloudflare API兼容性标志错误（'No such compatibility flag: unsafe-eval'和启动'Uncaught EvalError'），更新为'allow_eval_during_startup'" },
-                      { en: "Fixed a critical issue where selecting multiple gateway IPs for a user caused session disruptions (IP splitting) on sites behind Cloudflare, resolved via user-consistent hashing and smart gateway failover", zh: "修复选择多个网关IP时导致Cloudflare背后网站会话中断（IP分裂）的关键问题，通过用户一致性哈希和智能网关故障转移解决" },
+                      { en: "Fixed a critical issue where selecting multiple gateway IPs for a user caused session disruptions (IP splitting) on sites behind Cloudflare, resolved via user-consistent hashing and smart gateway failover", zh: "修复选择多个网关IP时导致Cloudflare后面网站会话中断（IP分裂）的关键问题，通过用户一致性哈希和智能网关故障转移解决" },
                       { en: "Fixed client-side regular expression parsing to correctly split global IPs separated by backslashes, tabs, commas, or semicolons in the browser", zh: "修复客户端正则表达式解析，正确分割由反斜杠、制表符、逗号或分号分隔的全局IP" }
                   ],
                   improved: [
@@ -2334,20 +2371,20 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
               "2.5.6.1": {
                   headline: { en: "Multi-IP Management & Crucial Bug Fixes", zh: "多IP管理和关键错误修复" },
                   added: [
-                       { en: "Support setting custom config name, custom gateway IP, and custom clean IP for each user dynamically in the Add User modal", zh: "在添加用户弹窗中支持为每个用户动态设置自定义配置名称、自定义网关IP和自定义干净IP" }
+                       { en: "Support setting custom config name, custom gateway IP, and custom clean IP for each user dynamically in the Add User modal", zh: "支持在添加用户弹窗中为每个用户动态设置自定义配置名称、自定义网关IP和自定义干净IP" }
                   ],
                   fixed: [
-                      { en: "Fixed a critical JavaScript rollback error ('ReferenceError: proxyIp is not defined') when adding a new user", zh: "修复添加新用户时的关键JavaScript回滚错误（'ReferenceError: proxyIp is not defined'）" }
+                      { en: "Fixed a critical JavaScript rollback error ('ReferenceError: proxyIp is not defined') when adding a new user", zh: "修复添加新用户时的关键JavaScript错误（'ReferenceError: proxyIp is not defined'）" }
                   ],
                   improved: [
-                      { en: "Streamlined alignment of custom user values with subscription generation", zh: "简化自定义用户值与订阅生成的一致性" }
+                      { en: "Streamlined alignment of custom user values with subscription generation", zh: "简化自定义用户值与订阅生成的对齐" }
                   ],
                   notes: []
               },
               "2.5.6": {
                   headline:                { en: "Multiple Gateway IPs & Flag Matching", zh: "多网关IP和旗帜匹配" },
                   added: [
-                      { en: "Support multi-gateway IP lists (rotated/distributed across generated configs to bypass Cloudflare limits)", zh: "支持多网关IP列表（在生成的配置中轮换/分配以绕过Cloudflare限制）" },
+                      { en: "Support multi-gateway IP lists (rotated/distributed across generated configs to bypass Cloudflare limits)", zh: "支持多网关IP列表（在生成的配置中轮换/分发以绕过Cloudflare限制）" },
                       { en: "Proper country flag matching for configs based on the actual gateway IP used", zh: "基于实际使用的网关IP正确匹配配置的国家旗帜" }
                   ],
                   fixed: [
@@ -2355,7 +2392,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   ],
                   improved: [
                       { en: "Distributed multiple gateway IPs evenly across subscription sub-configs", zh: "在订阅子配置中均匀分配多个网关IP" },
-                      { en: "Enhanced IP API resolving and flag caching logic", zh: "增强IP API解析和旗帜缓存逻辑" }
+                      { en: "Enhanced IP API resolving and flag caching logic", zh: "增强IP解析和旗帜缓存逻辑" }
                   ],
                   notes: []
               },
@@ -2363,7 +2400,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   headline: { en: "One-Click Panel Update", zh: "一键面板更新" },
                   added: [
                       { en: "Update the panel directly from the admin panel — no need to use Cloudflare dashboard", zh: "直接从管理面板更新面板 — 无需使用Cloudflare仪表板" },
-                      { en: "One-click deployment inside the panel for quick and easy updates", zh: "面板内一键部署，快速便捷更新" },
+                      { en: "One-click deployment inside the panel for quick and easy updates", zh: "面板内一键部署用于快速简便的更新" },
                   ],
                   fixed: [],
                   improved: [
@@ -2377,9 +2414,9 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   fixed: [],
                   improved: [
                       { en: "Improved system performance using smart caching (faster responses and less database load)", zh: "使用智能缓存改进系统性能（更快的响应和更少的数据库负载）" },
-                      { en: "Added smart caching system (TTL) for configuration and usage data", zh: "新增智能缓存系统(TTL)用于配置和用量数据" },
-                      { en: "Reduced database calls to make the panel faster and more efficient", zh: "减少数据库调用，使面板更快更高效" },
-                      { en: "Background processing added for non-critical tasks to improve speed", zh: "为非关键任务添加后台处理以提高速度" },
+                      { en: "Added smart caching system (TTL) for configuration and usage data", zh: "添加智能缓存系统（TTL）用于配置和使用数据" },
+                      { en: "Reduced database calls to make the panel faster and more efficient", zh: "减少数据库调用使面板更快更高效" },
+                      { en: "Background processing added for non-critical tasks to improve speed", zh: "添加后台处理用于非关键任务以提高速度" },
                   ],
                   notes: []
               },
@@ -2391,8 +2428,8 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                       { en: "Added proper Telegram user ID validation for all Worker-related requests", zh: "为所有Worker相关请求添加正确的Telegram用户ID验证" },
                   ],
                   improved: [
-                      { en: "Only users with approved admin IDs can interact with the bot and access panel data", zh: "只有批准的管理员ID用户才能与机器人交互并访问面板数据" },
-                      { en: "Unauthorized users now receive a clear access denied message", zh: "未授权用户现在收到清晰的拒绝访问消息" },
+                      { en: "Only users with approved admin IDs can interact with the bot and access panel data", zh: "只有管理员ID列表中的用户才能与机器人交互并访问面板数据" },
+                      { en: "Unauthorized users now receive a clear access denied message", zh: "未授权用户现在收到清晰的访问拒绝消息" },
                   ],
                   notes: [
                       { en: "Security update — recommended for all users", zh: "安全更新 — 推荐所有用户使用" },
@@ -2401,13 +2438,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
               "2.5.4": {
                   headline: { en: "Overview Dashboard & Mobile Improvements", zh: "概览仪表板和移动端改进" },
                   added: [
-                      { en: "Added Overview Dashboard as the default home page", zh: "新增概览仪表板作为默认主页" },
-                      { en: "Added quick statistics and recent activity section", zh: "新增快速统计和最近活动部分" },
+                      { en: "Added Overview Dashboard as the default home page", zh: "添加概览仪表板作为默认主页" },
+                      { en: "Added quick statistics and recent activity section", zh: "添加快速统计和最近活动部分" },
                   ],
                   fixed: [],
                   improved: [
-                      { en: "Improved mobile responsiveness of the Overview page", zh: "改进概览页面的移动端响应性" },
-                      { en: "Localized traffic units for Persian language", zh: "概览页面的流量单位本地化为中文" },
+                      { en: "Improved mobile responsiveness of the Overview page", zh: "改进概览页面的移动响应性" },
+                      { en: "Localized traffic units for Persian language", zh: "概览页面中文语言的流量单位本地化" },
                   ],
                   notes: []
               },
@@ -2415,7 +2452,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   headline: { en: "Telegram Bot Fixes & Formatting Cleanup", zh: "Telegram机器人修复和格式清理" },
                   added: [],
                   fixed: [
-                      { en: "Fixed admin buttons not showing immediately after /start in some cases", zh: "修复某些情况下/start后管理按钮不立即显示的问题" },
+                      { en: "Fixed admin buttons not showing immediately after /start in some cases", zh: "修复某些情况下/start后管理员按钮不立即显示的问题" },
                       { en: "Fixed subscription link button returning per-user links instead of master link", zh: "修复订阅链接按钮返回每用户链接而非主链接的问题" },
                       { en: "Fixed duplicate messages when clicking Update Usage with unchanged stats", zh: "修复点击更新用量但统计未变时发送重复消息的问题" },
                       { en: "Fixed <code> tags showing as raw text in Telegram messages", zh: "修复Telegram消息中<code>标签显示为原始文本的问题" },
@@ -2432,12 +2469,12 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   ]
               },
               "2.5.2": {
-                  headline: { en: "Modal Responsiveness & Mobile UX", zh: "弹窗响应性和移动端用户体验" },
+                  headline: { en: "Modal Responsiveness & Mobile UX", zh: "弹窗响应性和移动用户体验" },
                   added: [],
                   fixed: [],
                   improved: [
-                      { en: "Improved Add/Edit User modal responsiveness on all screen sizes", zh: "改进添加/编辑用户弹窗在所有屏幕尺寸的响应性" },
-                      { en: "Added sticky action buttons in modals for better mobile support", zh: "在弹窗中添加粘性操作按钮以更好地支持移动端" },
+                      { en: "Improved Add/Edit User modal responsiveness on all screen sizes", zh: "改进所有屏幕尺寸下添加/编辑用户弹窗的响应性" },
+                      { en: "Added sticky action buttons in modals for better mobile support", zh: "在弹窗中添加固定操作按钮以更好地支持移动端" },
                       { en: "Enhanced scrolling behavior — form content scrolls independently while buttons stay visible", zh: "改进滚动行为 — 表单内容独立滚动而按钮保持可见" },
                       { en: "Improved overall user experience when managing subscribers", zh: "改进管理订阅者时的整体用户体验" },
                   ],
@@ -2449,29 +2486,29 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   headline: { en: "Simplified Panel Management & Bot Stability", zh: "简化的面板管理和机器人稳定性" },
                   added: [
                       { en: "Web login signal system — bot auto-detects the last active web-logged panel", zh: "Web登录信号系统 — 机器人自动检测最后活跃的Web登录面板" },
-                      { en: "Login sync endpoint (/tg/sync_panel) for remote panels to notify the hub on admin login", zh: "登录同步端点(/tg/sync_panel)，用于远程面板在管理员登录时通知中心" },
-                      { en: "Hub panel URL config (hubPanelUrl) for remote panels to signal login events", zh: "中心面板URL配置(hubPanelUrl)，用于远程面板发送登录事件信号" },
+                      { en: "Login sync endpoint (/tg/sync_panel) for remote panels to notify the hub on admin login", zh: "登录同步端点（/tg/sync_panel）用于远程面板在管理员登录时通知中心" },
+                      { en: "Hub panel URL config (hubPanelUrl) for remote panels to signal login events", zh: "中心面板URL配置（hubPanelUrl）用于远程面板发送登录事件信号" },
                       { en: "Full user management via Telegram bot (create, edit, delete, search, disable, re-enable)", zh: "通过Telegram机器人完整管理用户（创建、编辑、删除、搜索、禁用、重新启用）" },
-                      { en: "HTTP REST API for all user operations at /api/users (GET, POST, PUT, DELETE)", zh: "所有用户操作的HTTP REST API位于/api/users（GET、POST、PUT、DELETE）" },
-                      { en: "Statistics API at /api/stats with user counts, traffic totals, and system status", zh: "统计API位于/api/stats，包含用户数、流量总量和系统状态" },
+                      { en: "HTTP REST API for all user operations at /api/users (GET, POST, PUT, DELETE)", zh: "所有用户操作的HTTP REST API（GET、POST、PUT、DELETE）位于/api/users" },
+                      { en: "Statistics API at /api/stats with user counts, traffic totals, and system status", zh: "/api/stats统计API，包含用户数、流量总量和系统状态" },
                   ],
                   fixed: [
                       { en: "Removed multi-panel selection system that caused session confusion and incorrect panel switching", zh: "移除导致会话混淆和错误面板切换的多面板选择系统" },
-                      { en: "Fixed bot not responding after pressing /start due to stale step state", zh: "修复由于过时步骤状态导致按/start后机器人无响应的问题" },
-                      { en: "Fixed panel context mixing when switching between panels", zh: "修复在面板之间切换时面板上下文混淆的问题" },
-                      { en: "Fixed race condition in bot state persistence from non-blocking D1 writes", zh: "修复非阻塞D1写入导致的机器人状态持久化竞态条件" },
+                      { en: "Fixed bot not responding after pressing /start due to stale step state", zh: "修复由于过时的步骤状态导致按下/start后机器人无响应的问题" },
+                      { en: "Fixed panel context mixing when switching between panels", zh: "修复面板之间切换时面板上下文混合的问题" },
+                      { en: "Fixed race condition in bot state persistence from non-blocking D1 writes", zh: "修复非阻塞D1写入导致的机器人状态持久化竞争条件" },
                   ],
                   improved: [
-                      { en: "/start now directly opens panel management based on last web login — no panel selection menu", zh: "/start现在基于上次Web登录直接打开面板管理 — 无需面板选择菜单" },
-                      { en: "Bot automatically links Telegram session to the last active web-logged panel", zh: "机器人自动将Telegram会话链接到上次活跃的Web登录面板" },
+                      { en: "/start now directly opens panel management based on last web login — no panel selection menu", zh: "/start现在直接基于最后Web登录打开面板管理 — 无面板选择菜单" },
+                      { en: "Bot automatically links Telegram session to the last active web-logged panel", zh: "机器人自动将Telegram会话链接到最后活跃的Web登录面板" },
                       { en: "Simplified bot logic with clean 1-to-1 mapping between web login and Telegram session", zh: "简化机器人逻辑，Web登录和Telegram会话之间清晰的1对1映射" },
-                      { en: "Telegram bot main menu redesigned with inline keyboard layout for mobile-first management", zh: "Telegram机器人主菜单使用内联键盘布局重新设计，面向移动端管理" },
+                      { en: "Telegram bot main menu redesigned with inline keyboard layout for mobile-first management", zh: "Telegram机器人主菜单重新设计，使用内联键盘布局用于移动优先管理" },
                   ],
                   notes: [
-                      { en: "Single-panel mode works more reliably — it is recommended to use one Telegram bot per panel for best stability", zh: "单面板模式更稳定 — 建议每个面板使用专用Telegram机器人以获得最佳稳定性" },
-                      { en: "For multi-panel setups: set hubPanelUrl on each remote panel to enable automatic login sync", zh: "多面板设置：在每个远程面板上设置hubPanelUrl以启用自动登录同步" },
-                      { en: "Each panel having its own dedicated bot improves session accuracy and prevents panel mix-up issues", zh: "每个面板拥有专用机器人可提高会话准确性并防止面板混淆问题" },
-                      { en: "API endpoints are authenticated via Master Key (Bearer token or ?key= parameter)", zh: "API端点通过主密钥认证（Bearer令牌或?key=参数）" },
+                      { en: "Single-panel mode works more reliably — it is recommended to use one Telegram bot per panel for best stability", zh: "单面板模式更可靠 — 建议每个面板使用专用Telegram机器人以获得最佳稳定性" },
+                      { en: "For multi-panel setups: set hubPanelUrl on each remote panel to enable automatic login sync", zh: "对于多面板设置：在每个远程面板上设置hubPanelUrl以启用自动登录同步" },
+                      { en: "Each panel having its own dedicated bot improves session accuracy and prevents panel mix-up issues", zh: "每个面板拥有专用机器人可改善会话准确性并防止面板混淆问题" },
+                      { en: "API endpoints are authenticated via Master Key (Bearer token or ?key= parameter)", zh: "API端点通过主密钥认证（Bearer token或?key=参数）" },
                   ]
               },
               "2.5.0": {
@@ -2480,13 +2517,13 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                       { en: "Automatic user disable on traffic limit exceeded", zh: "流量限制超出时自动禁用用户" },
                       { en: "Automatic user disable on expiration date reached", zh: "到期日期到达时自动禁用用户" },
                       { en: "Activity log and Telegram notification for auto-disabled users", zh: "自动禁用用户的活动日志记录和Telegram通知" },
-                      { en: "Recently Disabled Users notification panel in Users tab", zh: "用户标签页中最近禁用用户的通知面板" },
-                      { en: "Status filter dropdown (All/Active/Paused/Auto-Disabled)", zh: "状态筛选下拉菜单（全部/活跃/暂停/自动禁用）" },
+                      { en: "Recently Disabled Users notification panel in Users tab", zh: "用户标签中最近禁用用户通知面板" },
+                      { en: "Status filter dropdown (All/Active/Paused/Auto-Disabled)", zh: "状态筛选下拉菜单（全部/活跃/已暂停/自动禁用）" },
                       { en: "Auto-Disabled statistics card in dashboard", zh: "仪表板中的自动禁用统计卡片" },
                   ],
                   fixed: [
                       { en: "Expired users are now disabled instead of deleted", zh: "过期用户现在被禁用而非删除" },
-                      { en: "Users exceeding traffic limits are preserved in panel", zh: "超过流量限制的用户在面板中保留" },
+                      { en: "Users exceeding traffic limits are preserved in panel", zh: "超出流量限制的用户在面板中保留" },
                   ],
                   improved: [
                       { en: "User data, statistics, and history are now preserved", zh: "用户数据、统计和历史现在被保留" },
@@ -2499,9 +2536,9 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
               "2.4.9": {
                   headline: { en: "Custom Protocol & Port Configuration", zh: "自定义协议和端口配置" },
                   added: [
-                      { en: "Custom protocol mode per user (VLESS/Beta/Both)", zh: "每个用户的自定义协议模式（VLESS/Beta/两者）" },
-                      { en: "Custom port configuration per user", zh: "每个用户的自定义端口配置" },
-                      { en: "Maximum configs limit per user", zh: "每个用户的最大配置限制" },
+                      { en: "Custom protocol mode per user (VLESS/Beta/Both)", zh: "每用户自定义协议模式（VLESS/Beta/两者）" },
+                      { en: "Custom port configuration per user", zh: "每用户自定义端口配置" },
+                      { en: "Maximum configs limit per user", zh: "每用户最大配置限制" },
                   ],
                   fixed: [],
                   improved: [
@@ -2509,7 +2546,6 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   ],
                   notes: []
               }
-               }
           };
 
           function renderChangelog(version) {
@@ -2580,7 +2616,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
           });
 
           function applyLang() {
-              document.documentElement.dir = lang === 'zh' ? 'ltr' : 'ltr'; document.documentElement.lang = lang;
+              document.documentElement.dir = 'ltr'; document.documentElement.lang = lang;
               document.getElementById('lang-toggle').innerText = lang === 'zh' ? 'EN' : '中';
               document.querySelectorAll('[data-i18n]').forEach(el => {
                   const key = el.getAttribute('data-i18n');
@@ -3059,9 +3095,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   customPanelUrl: el('cfg-custom-panel-url').value,
                   fakeConfigs: getFakeConfigsFromUI(),
                   linkedPanels: (window.nahanConfig && Array.isArray(window.nahanConfig.linkedPanels)) ? window.nahanConfig.linkedPanels : []
-                   }
-                }
-          };
+              };
               const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(payload, null, 2));
               const dlAnchor = document.createElement('a');
               dlAnchor.setAttribute("href", dataStr);
@@ -3130,13 +3164,11 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                       }
 
                       updateUI();
-                      alert(lang === 'zh' ? '配置已成功导入！点击保存以写入更改。' : 'Configuration parsed! Click save to write changes.');
+                      alert(lang === 'zh' ? '配置已成功导入！请点击保存。' : 'Configuration parsed! Click save to write changes.');
                   } catch(err) {
-                      alert(lang === 'zh' ? '无效的配置文件！' : 'Invalid configuration file!');
+                      alert(lang === 'zh' ? '文件 名称有效!' : 'Invalid configuration file!');
                   }
-                   }
-                }
-          };
+              };
               reader.readAsText(file);
           }
 
@@ -3398,9 +3430,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                                             slaveNodes: '',
                                             linkedPanels: (window.nahanConfig && Array.isArray(window.nahanConfig.linkedPanels)) ? window.nahanConfig.linkedPanels : []
                                         }
-                                         }
-                }
-          };
+                                    };
                                               //update user port after change global
                                            const globalPorts = (payload.config.socketPorts || '443').split(',').map(s=>s.trim()).filter(Boolean);
                                            payload.config.users = (window.nahanConfig.users || []).map(u => {
@@ -3555,7 +3585,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                   let isExp = false;
                   if (u.expiryMs) {
                       let date = new Date(u.expiryMs);
-                      expTxt = lang === 'zh' ? date.toLocaleDateString('zh-CN') : date.toLocaleDateString();
+                      expTxt = lang === 'zh' ? date.toLocaleDateString('fa-IR') : date.toLocaleDateString();
                       if (Date.now() > u.expiryMs) {
                           const expiredTxt = lang === 'zh' ? ' (已过期)' : ' (Expired)';
                           expTxt += ` <span class="text-xs text-red-500 font-bold">${expiredTxt}</span>`;
@@ -3578,7 +3608,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
 
                   const totalLabel = lang === 'zh' ? '总计：' : 'Total:';
                   const dailyLabel = lang === 'zh' ? '每日：' : 'Daily:';
-                  const rLabel = lang === 'zh' ? '次' : 'r';
+                  const rLabel = lang === 'zh' ? '请求' : 'r';
 
                   let linkTitle = lang === 'zh' ? '复制订阅链接' : 'Copy Subscription Link';
                   let pauseTitle = u.isPaused ? (lang === 'zh' ? '启用用户' : 'Resume User') : (lang === 'zh' ? '暂停用户' : 'Pause User');
@@ -3733,7 +3763,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
           }
 
           async function resetUserTraffic(uuid) {
-              const resetMsg = lang === 'zh' ? '确定要重置此订阅者的所有流量统计（总计和每日）吗？' : 'Are you sure you want to reset all traffic metrics (Total and Daily) for this subscriber?';
+              const resetMsg = lang === 'zh' ? '确定要重置此订阅的所有流量统计（总计和每日）吗？' : 'Are you sure you want to reset all traffic metrics (Total and Daily) for this subscriber?';
               if(!(await showConfirm(lang === 'zh' ? '重置流量' : 'Reset Traffic', resetMsg))) return;
               try {
                   const res = await fetch(baseRoute + '/api/sync', {
@@ -3742,7 +3772,7 @@ proxyip.cmliussss.net" class="w-full px-4 py-3 rounded-xl border border-slate-20
                       body: JSON.stringify({ key: sessionKey, resetUUID: uuid })
                   });
                   if (res.ok) {
-                      const successMsg = lang === 'zh' ? '订阅者流量统计已成功重置！' : 'Subscriber traffic metrics successfully reset!';
+                      const successMsg = lang === 'zh' ? '订阅流量已成功重置!' : 'Subscriber traffic metrics successfully reset!';
                       alert(successMsg);
                       doLogin(true); // reload usage data from server
                   } else {
@@ -4092,9 +4122,7 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
                      connLimit: connLimit,
                      userPanelUrl: userPanelUrl,
                      createdAt: Date.now()
-                     }
-                }
-          };
+                };
 
               window.nahanConfig.users.push(u);
               document.getElementById('view-add-user').classList.add('hidden');
@@ -4448,7 +4476,7 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
                   cleanIpsTextarea.value = ipList;
                   cleanIpsTextarea.dispatchEvent(new Event('input'));
                   cleanIpsTextarea.dispatchEvent(new Event('change'));
-                  alert((lang === 'zh' ? '成功解析并加载了 ' : 'Successfully resolved and loaded ') + resolvedIps.size + (lang === 'zh' ? ' 个干净IP！' : ' clean IPs!'));
+                  alert((lang === 'zh' ? '成功解析并加载了 ' : 'Successfully resolved and loaded ') + resolvedIps.size + (lang === 'zh' ? ' 干净IP 已加载!' : ' clean IPs!'));
               } else {
                   alert(lang === 'zh' ? '域名解析为IP失败。请检查网络连接或自定义DNS。' : 'Failed to resolve domains to IPs. Please verify your internet connection or custom DNS.');
               }
@@ -4552,7 +4580,7 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
               if (!banner) return;
 
               document.getElementById('update-alert-text').textContent = lang === 'zh'
-                  ? '您可以重新部署最新的活动版本，或在普通版本和混淆版本之间切换。'
+                  ? '您可以获取最新版本 活跃 重新部署或在版本之间 普通 和 混淆 切换.'
                   : 'You can redeploy the latest code or switch between Normal/Obfuscated version on the fly.';
 
               banner.classList.remove('hidden');
@@ -4688,7 +4716,7 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
               if (!banner) return;
 
               const msg = lang === 'zh'
-                  ? '更新版本 (v' + version + ') 已在您的GitHub仓库 (' + repo + ') 中可用。'
+                  ? '较新版本 (v' + version + ') 在您的GitHub仓库中 (' + repo + ') 可用。'
                   : 'A newer version (v' + version + ') is available in your GitHub repository (' + repo + ').';
 
               document.getElementById('update-alert-text').textContent = msg;
@@ -4753,21 +4781,21 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
                               ? '<div class="space-y-2">' +
                                 '<p class="font-bold">✨ 新增:</p>' +
                                 '<ul class="list-disc list-inside text-xs space-y-1">' +
-                                '<li>多语言订阅页面，支持深色/浅色模式</li>' +
-                                '<li>NAT64支持和用户专用节点</li>' +
-                                '<li>直连配置和自动更新</li>' +
+                                '<li>订阅页面 多语言深色/浅色模式</li>' +
+                                '<li>NAT64备份 和 专用节点 用户</li>' +
+                                '<li>直连配置和 自动更新</li>' +
                                 '<li>通过Telegram机器人完整管理网关</li>' +
                                 '</ul>' +
                                 '<p class="font-bold mt-2">⚡ 改进:</p>' +
                                 '<ul class="list-disc list-inside text-xs space-y-1">' +
                                 '<li>仪表板性能和滚动速度</li>' +
-                                '<li>完全重写配置生成器</li>' +
-                                '<li>智能命名，支持新标签</li>' +
+                                '<li>完全重写配置生成</li>' +
+                                '<li>智能命名与新标签</li>' +
                                 '</ul>' +
                                 '<p class="font-bold mt-2">🔧 修复:</p>' +
                                 '<ul class="list-disc list-inside text-xs space-y-1">' +
-                                '<li>损坏的中文翻译</li>' +
-                                '<li>订阅页面错误</li>' +
+                                '<li>中文翻译有误</li>' +
+                                '<li>错误页面 订阅</li>' +
                                 '</ul></div>'
                               : '<div class="space-y-2">' +
                                 '<p class="font-bold">✨ Added:</p>' +
@@ -4791,7 +4819,7 @@ function buildPortCheckboxes(wrapId, selectedPorts) {
                       }
                   } catch(err) {
                       changelogContent.innerHTML = lang === 'zh'
-                          ? '<p class="text-rose-500">获取更新日志时出错。</p>'
+                          ? '<p class="text-rose-500">获取更新日志出错.</p>'
                           : '<p class="text-rose-500">Failed to load changelog.</p>';
                   }
               }
